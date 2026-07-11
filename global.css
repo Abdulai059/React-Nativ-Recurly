@@ -127,7 +127,11 @@
   }
 
   .upcoming-icon {
-    @apply size-14;
+    @apply size-10;
+  }
+
+  .upcoming-icon-container {
+    @apply rounded-md bg-muted p-2;
   }
 
   .upcoming-price {
@@ -159,7 +163,11 @@
   }
 
   .sub-icon {
-    @apply size-16 rounded-lg;
+    @apply size-10 rounded-lg;
+  }
+
+  .sub-icon-container {
+    @apply rounded-md bg-muted p-2;
   }
 
   .sub-copy {
