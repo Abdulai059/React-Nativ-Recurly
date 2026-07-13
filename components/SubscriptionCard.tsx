@@ -67,7 +67,7 @@ const SubscriptionCard = ({
               <View className="sub-row-copy">
                 <Text className="sub-label">Category:</Text>
                 <Text className="sub-value" numberOfLines={1}>
-                  {category?.trim() || ""}
+                  {category?.trim() || " Not Provided"}
                 </Text>
               </View>
             </View>
@@ -75,7 +75,9 @@ const SubscriptionCard = ({
               <View className="sub-row-copy">
                 <Text className="sub-label">Started:</Text>
                 <Text className="sub-value" numberOfLines={1}>
-                  {startDate ? formatSubscriptionDateTime(startDate) : ""}
+                  {startDate
+                    ? formatSubscriptionDateTime(startDate)
+                    : "Not Provided"}
                 </Text>
               </View>
             </View>
@@ -84,7 +86,9 @@ const SubscriptionCard = ({
               <View className="sub-row-copy">
                 <Text className="sub-label">Renewal Date:</Text>
                 <Text className="sub-value" numberOfLines={1}>
-                  {renewalDate ? formatSubscriptionDateTime(renewalDate) : ""}
+                  {renewalDate
+                    ? formatSubscriptionDateTime(renewalDate)
+                    : "Not Provided"}
                 </Text>
               </View>
             </View>
@@ -93,7 +97,7 @@ const SubscriptionCard = ({
               <View className="sub-row-copy">
                 <Text className="sub-label">Status:</Text>
                 <Text className="sub-value" numberOfLines={1}>
-                  {status ? formatStatusLabel(status) : ""}
+                  {status ? formatStatusLabel(status) : "Not Provided"}
                 </Text>
               </View>
             </View>
